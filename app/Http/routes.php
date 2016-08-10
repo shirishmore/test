@@ -28,4 +28,7 @@ Route::post('updateProfile', array('uses' => 'HomeController@updateProfile'));
 
 Route::get('logout', array('uses' => 'HomeController@doLogout'));
 
+Route::get('addressBook/delete/{id}', 'AddressBookController@destroy');
+
 Route::resource('addressBook', 'AddressBookController');
+

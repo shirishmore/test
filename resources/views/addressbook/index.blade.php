@@ -44,6 +44,7 @@
                 <td>Address1</td>
                 <td>Address2</td>
                 <td>Address3</td>
+                <td>Pincode</td>
                 <td>City</td>
                 <td>State</td>
                 <td>Country</td>
@@ -56,7 +57,7 @@
                 <td>{{ $value->id }}</td>
                 <td>{{ $value->address_line}}</td>
                 <td>{{ $value->contact_name  }}</td>
-                <td>{{ $value->contact_list  }}</td>
+                <td>{{ $value->contact_phone  }}</td>
                 <td>{{ $value->address1 }}</td>
                 <td>{{ $value->address2 }}</td>
                 <td>{{ $value->address3 }}</td>
@@ -64,7 +65,7 @@
                 <td>{{ $value->city }}</td>
                 <td>{{ $value->state }}</td>
                 <td>{{ $value->country }}</td>
-                <td>{{ $value->status }}</td>
+                <td></td>
                 <td >
                     <a class="btn" href="{!! URL::to('addressBook/' . $value['id']) !!}"><i class="fa fa-eye"></i> </a>
                     <a class="btn" href="{!! URL::to('addressBook/' . $value['id'] . '/edit') !!}"><i class="fa fa-pencil"></i></a>

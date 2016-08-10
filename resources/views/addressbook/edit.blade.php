@@ -16,7 +16,7 @@
     </div>
 <div class="row">
     <div class="col-sm-12">
-        <form action="{{ route('addressBook.update', $addressbook->id) }}" method="POST">
+        <form action="{!! url('addressBook') !!}" >
             <input type="hidden" name="_method" value="PUT">
             <input type="hidden" name="_token" value="{{ csrf_token() }}">
             <input type='hidden' class="form-control" name="id" value="{{ $addressbook->id }}">
